@@ -7,12 +7,13 @@ typedef struct TimePos{
     int pos_ms;
     int pos_sec;
     int pos_min;
+    int interval;
 }TimePos_t;
 
 typedef struct Event {
     void*(*func)(void*);
     void* arg;
-
+    TimePos_t timePos;
 }Event_t;
 
 class TimeWheel {
