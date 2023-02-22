@@ -25,7 +25,11 @@ int main()
 {
     TimeWheel wheel;
     wheel.initTimeWheel(100, 10);
-
+    wheel.createTimingEvent(200, NULL);
+    while (1)
+    {
+        /* code */
+    }
     
     
 }
