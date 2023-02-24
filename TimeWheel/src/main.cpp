@@ -20,16 +20,17 @@ void fun1500()
 {
     cout << "func 1500" << endl;
 }
+void funccc(void) {
+    cout << "function" << endl;
+}
 
 int main()
 {
     TimeWheel wheel;
     wheel.initTimeWheel(100, 10);
-    wheel.createTimingEvent(200, NULL);
+    wheel.createTimingEvent(200, funccc);
     while (1)
     {
         /* code */
     }
-    
-    
 }
